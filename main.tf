@@ -1,6 +1,6 @@
 resource "aws_instance" "win_ec2" {
   ami = "ami-02354e95b39ca8dec"
-  instance_type = "t2.micro"
+  instance_type = "${var.instancetype}"
   tags = {
     Name = "ec4"
    }
